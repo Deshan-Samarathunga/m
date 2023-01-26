@@ -15,23 +15,38 @@
     <!--
         components - seperate parts of a graph
         vertex - joints (junctions)
-        edges - paths between vertices
+        edges - paths between vertices(directed edges called as arc(edge with an arrow head))
         components - like seperated 2 graphs
 
         
         total degree = num of edges * 2          // 2 because every edge has 2 end points
         no of egdes to gake graph should be an integer so graph exists
 
-        \\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         hamilton path - path in a graph that go through every vertex
                         (සෑම ශීර්ෂයක් හරහාම ගමන් කරන ප්‍රස්ථාරයක මාර්ගය)
 
-
-        
         hamilton circuit -  start and end at the same place(should go through every vertex)
 
-        euler path - 
-        euler circuit - 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        travesible - can go through one time at an edge and cover the whole graph(can go through vertices multiple times)
+                    * vertices with odd degree should be 0 or 2 in order to be travesible(means if theres no odd degree vertices , it is travesible)
+
+        not travesible - if cant cover all the edges its not travesible
+
+        euler path - vertices with odd degree = 2
+                    should be a connected graph
+                    should be travesible
+                    starting degree and ending degree is different
+                    can go through the same degree few times
+                    start with an odd degree and end with an odd degree(not the same degree, different degrees)
+
+        euler circuit - vertices with odd degree = 0
+                        should be a connected graph
+                        should be travesible
+                        starting degree and ending with the same degree
+                        can go through the same degree few times
+
 
 
 
